@@ -84,7 +84,19 @@
         </div>
       </div>
 
-      <div class="song_side"></div>
+      <div class="song_side">
+        <nav>
+            <ul>
+                <li>Discover<span></span></li>
+                <li>My LIBRARY</li>
+                <li>Radio</li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search ASMR">
+            </div>
+        </nav>
+      </div>
 
       <div class="master_play">
         <div class="wave">
@@ -104,9 +116,17 @@
         <span id="currentStart">0:00</span>
         <div class="bar">
             <input type="range" id="seek" min="0" value="0" max="100">
-        </div>
-        <span id="currentEnd">0:00</span>
         <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+      </div>
+      <span id="currentEnd">0:00</span>
+      
+      <div class="vol">
+        <i class="bi bi-volume-down-fill"></i>
+        <input type="range" id="vol" min="0" value="30" max="100">
+        <div class="vol_bar"></div>
+        <div class="dot" id="vol_dot"></div>
+    </div>
       </div>
     </header>
     <script src="app.js"></script>
