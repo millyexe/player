@@ -358,6 +358,14 @@ header .master_play .vol .dot::before {
 header .song_side{
   z-index: 2;
 }
+header .song_side::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: url");
+  z-index: -1;
+}
 
 header .song_side nav{
   width: 90%;
@@ -423,7 +431,7 @@ header .song_side nav .search input{
   outline: none;
   border: none;
   padding: 0px 10px;
-  color: white;
+  color: black;
   font-size: 12px;
 }
 header .song_side nav .user{
@@ -439,4 +447,52 @@ header .song_side nav .user img{
   height: 30px;
   border-radius: 50px;
   box-shadow: 2px 2px 8px darkblue;
+}
+
+header .song_side .content {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  border: 1px solid white;
+  padding-top: 20px;
+}
+header .song_side .content h1{
+  font-size: 25px;
+  font-weight: 600;
+
+}
+header .song_side .content p{
+  font-size: 11px;
+  font-weight: 400;
+  color: grey;
+  margin: 5px;
+}
+header .song_side .content .buttons{
+  margin-top: 15px;
+}
+header .song_side .content .buttons button{
+  width: 130px;
+  height: 30px;
+  border: 2px solid rgb(167, 50, 69);
+  outline: none;
+  border-radius: 20px;
+  background: pink;
+  color: white;
+  cursor: pointer;
+  transition: .3s linear;
+}
+header .song_side .content .buttons button:hover{
+  border: 2px solid rgb(167, 50, 69);
+  background: pink;
+  color: rgb(167, 50, 69);
+}
+header .song_side .content .buttons button:nth-child(2){
+  border: 2px solid rgb(167, 50, 69);
+  background: pink;
+  color: white;
+}
+header .song_side .content .buttons button:nth-child(2):hover{
+  border: 2px solid rgb(167, 50, 69);
+  background: pink;
+  color: rgb(167, 50, 69);
 }
