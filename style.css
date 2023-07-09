@@ -609,7 +609,13 @@ header .song_side .popular_song .pop_song li h5{
     height: auto;
     margin-top: 10px;
     display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     }
+    header .song_side .popular_artists .item::-webkit-scrollbar{
+      display: none;
+      }
+
     header .song_side .popular_artists .item li{
       list-style-type: none;
       position: relative;
