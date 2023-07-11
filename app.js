@@ -7,109 +7,109 @@ const songs = [
     id: "1",
     songName: `Meditation for sleep<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/1.jpg",
   },
   {
     id: "2",
     songName: `Singing<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/2.jpg",
   },
   {
     id: "3",
     songName: `Tapping on wood<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/3.jpg",
   },
   {
     id: "4",
     songName: `Heavy Rain<br>
     <div class="subtitle">Nature ASMR</div>`,
-    poster: "img/img.jpg",
+    poster: "img/4.jpg",
   },
   {
     id: "5",
     songName: `Ocean<br>
     <div class="subtitle">Nature ASMR</div>`,
-    poster: "img/img.jpg",
+    poster: "img/5.jpg",
   },
   {
     id: "6",
     songName: `Possitive Afformation<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/6.jpg",
   },
   {
     id: "7",
     songName: `Music7<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/7.jpg",
   },
   {
     id: "8",
     songName: `Music8<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/8.jpg",
   },
   {
     id: "9",
     songName: ` Music9 <br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/9.jpg",
   },
   {
     id: "10",
     songName: `Music10<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/10.jpg",
   },
   {
     id: "11",
     songName: `Music11<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/11.jpg",
   },
   {
     id: "12",
     songName: `Music12<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/12.jpg",
   },
   {
     id: "13",
     songName: `Music13<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/13.jpg",
   },
   {
     id: "14",
     songName: `Music14<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/14.jpg",
   },
   {
     id: "15",
     songName: `Music15<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/15.jpg",
   },
   {
     id: "16",
     songName: `Music16<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/16.jpg",
   },
   {
     id: "17",
     songName: `Music17<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/17.jpg",
   },
   {
     id: "18",
     songName: `Music18<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/img.jpg",
+    poster: "img/18.jpg",
   },
 ];
 
@@ -118,7 +118,7 @@ Array.from(document.getElementsByClassName("songItem")).forEach((e, i) => {
   e.getElementsByTagName("h5")[0].innerHTML = songs[i].songName;
 });
 let masterPlay = document.getElementById("masterPlay");
-let wave = document.getElementsByClassName("wave")[0];
+let wave = document.getElementById("wave");
 
 masterPlay.addEventListener("click", () => {
   if (music.paused || music.currentTime <= 0) {
@@ -135,14 +135,14 @@ masterPlay.addEventListener("click", () => {
 });
 
 let index = 0;
-let poster_master_play = document.getElementById("poster_master_play");
+// let poster_master_play = document.getElementById("poster_master_play");
 
 Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
   e.addEventListener("click", (el) => {
     index = el.target.id;
     music.scr = `audio/${index}.mp3`;
-    poster_master_play.src = `img/${index}.jpg`;
-    music.play();
+    //     poster_master_play.src = `img/${index}.jpg`;
+    //     music.play();
   });
 });
 
