@@ -1,124 +1,122 @@
-const music = new Audio("Blue_chair.mp3");
+const music = new Audio("audio/1.mp3");
+
 // create Array
 
 const songs = [
   {
     id: "1",
-    songName: ` Meditation for sleep <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Meditation for sleep<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "2",
-    songName: ` Lullary <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Singing<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "3",
-    songName: ` Tapping on wood <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Tapping on wood<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "4",
-    songName: ` Heavy Rain <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Heavy Rain<br>
+    <div class="subtitle">Nature ASMR</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "5",
-    songName: ` Ocean <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Ocean<br>
+    <div class="subtitle">Nature ASMR</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "6",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Possitive Afformation<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "7",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music7<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "8",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music8<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "9",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: ` Music9 <br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "10",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music10<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "11",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music11<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "12",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music12<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "13",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music13<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "14",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music14<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "15",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music15<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "16",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music16<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "17",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music17<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
   {
     id: "18",
-    songName: ` Possitive Afformation <br>
-    <div class="subtitles">MILLYexe</div>`,
-    poster: "img.png",
+    songName: `Music18<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "img/img.jpg",
   },
 ];
 
-Array.from(document.getElementsByClassName("songItem")).forEach(
-  (element, i) => {
-    element.getElementsByTagName("img")[0].src = songs[i].poster;
-    element.getElementsByTagName("h5")[0].innerHTML = songs[i].songName;
-  }
-);
-
+Array.from(document.getElementsByClassName("songItem")).forEach((e, i) => {
+  e.getElementsByTagName("img")[0].src = songs[i].poster;
+  e.getElementsByTagName("h5")[0].innerHTML = songs[i].songName;
+});
 let masterPlay = document.getElementById("masterPlay");
 let wave = document.getElementsByClassName("wave")[0];
 
@@ -127,11 +125,81 @@ masterPlay.addEventListener("click", () => {
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
-    wave.classList.add("active2");
+    wave.classList.add("active1");
   } else {
     music.pause();
     masterPlay.classList.add("bi-play-fill");
     masterPlay.classList.remove("bi-pause-fill");
-    wave.classList.remove("active2");
+    wave.classList.remove("active1");
   }
+});
+
+let index = 0;
+let poster_master_play = document.getElementById("poster_master_play");
+
+Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
+  e.addEventListener("click", (el) => {
+    index = el.target.id;
+    music.scr = `audio/${index}.mp3`;
+    poster_master_play.src = `img/${index}.jpg`;
+    music.play();
+  });
+});
+
+//
+
+// const makeAllPlays = () => {
+//   Array.from(document.getElementsByClassName("playListPlay")).forEach(
+//     (element) => {
+//       element.classList.add("bi-play-circle-fill");
+//       element.classList.remove("bi-pause-circle-fill");
+//     }
+//   );
+// };
+
+// let index = 0;
+
+// let poster_master_play = document.getElementById("poster_master_play");
+// let title = document.getElementById("title");
+
+// Array.from(document.getElementsByClassName("playListPlay")).forEach(
+//   (element) => {
+//     element.addEventListener("click", (e) => {
+//       index = e.target.id;
+//       makeAllPlays();
+//       e.target.classList.remove("bi-play-circle-fill");
+//       e.target.classList.add("bi-pause-circle-fill");
+//       music.src = `audio/${index}.mp3`;
+//       poster_master_play.src = `img/${index}.jpg`;
+//       music.play();
+//       let song_title = songs.filter((ele) => {
+//         return ele.id == index;
+//       });
+//       song_title.forEach((ele) => {
+//         let { songName } = ele;
+//         title.innerHTML = songName;
+//       });
+//     });
+//   }
+// );
+let pop_song_left = document.getElementById("pop_song_left");
+let pop_song_right = document.getElementById("pop_song_right");
+let pop_song = document.getElementsByClassName("pop_song")[0];
+
+pop_song_right.addEventListener("click", () => {
+  pop_song.scrollLeft += 330;
+});
+pop_song_left.addEventListener("click", () => {
+  pop_song.scrollLeft -= 330;
+});
+let pop_art_left = document.getElementById("pop_art_left");
+let pop_art_right = document.getElementById("pop_art_right");
+let Artist_bx = document.getElementsByClassName("Artists_box")[0];
+
+pop_art_right.addEventListener("click", () => {
+  Artist_bx.scrollLeft += 330;
+});
+
+pop_art_left.addEventListener("click", () => {
+  Artist_bx.scrollLeft -= 330;
 });
