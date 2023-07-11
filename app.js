@@ -140,7 +140,7 @@ let poster_master_play = document.getElementById("poster_master_play");
 Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
   e.addEventListener("click", (el) => {
     index = el.target.id;
-    music.scr = `audio/${index}.mp3`;
+    music.src = `audio/${index}.mp3`;
     poster_master_play.src = `img/${index}.jpg`;
     music.play();
   });
