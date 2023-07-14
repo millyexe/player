@@ -265,7 +265,7 @@ header .master_play .bar .bar2 {
   position: absolute;
   width: 0%;
   height: 100%;
-  background: lightblue;
+  background: rgb(6, 56, 72);
   /* margin: 0px 15px 0px 10px ; */
   top: 0;
   transition: 1s linear;
@@ -275,7 +275,7 @@ header .master_play .bar .dot {
   position: absolute;
   width: 5px;
   height: 5px;
-  background: lightblue;
+  background: rgb(60, 7, 53);
   border-radius: 50%;
   left: 0%;
   top: -1px;
@@ -296,12 +296,12 @@ header .master_play .bar .dot::before {
 header .master_play .bar input{
   position: absolute;
   width: 100%;
-  top: -6px;
+  top: -7px;
   left: 0;
   cursor: pointer;
   z-index: 99999999;
   transition: 3s linear;
-  opacity: 0;
+  opacity: .5;
 }
 
 header .master_play .vol{

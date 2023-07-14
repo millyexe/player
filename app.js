@@ -212,6 +212,10 @@ music.addEventListener("timeupdate", () => {
   dot.style.left = `${seekbar}$`;
 });
 
+seek.addEventListener("change", () => {
+  music.currentTime = (seek.value * music.duration) / 100;
+});
+
 // space
 
 let pop_song_left = document.getElementById("pop_song_left");
@@ -226,12 +230,12 @@ pop_song_left.addEventListener("click", () => {
 });
 let pop_art_left = document.getElementById("pop_art_left");
 let pop_art_right = document.getElementById("pop_art_right");
-let Artist_bx = document.getElementsByClassName("Artists_box")[0];
+let Artists_bx = document.getElementsByClassName("Artists_bx")[0];
 
 pop_art_right.addEventListener("click", () => {
-  Artist_bx.scrollLeft += 330;
+  Artists_bx.scrollLeft += 330;
 });
 
 pop_art_left.addEventListener("click", () => {
-  Artist_bx.scrollLeft -= 330;
+  Artists_bx.scrollLeft -= 330;
 });
