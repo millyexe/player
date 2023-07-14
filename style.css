@@ -122,9 +122,11 @@ header .menu_side .menu_song li{
     margin-bottom: 10px;
     cursor: pointer;
     transition: .3s linear;
+    background: grey;
+
 }
 header .menu_side .menu_song li:hover{
-  background: grey;
+  background: lightblue;
 
 }
 header .menu_side .menu_song span{
