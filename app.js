@@ -123,20 +123,27 @@ let wave = document.getElementById("wave");
 masterPlay.addEventListener("click", () => {
   if (music.paused || music.currentTime <= 0) {
     music.play();
-    masterPlay.classList.remove("bi-play-fill");
-    masterPlay.classList.add("bi-pause-fill");
     wave.classList.add("active2");
-  } else {
-    music.pause();
     masterPlay.classList.add("bi-play-fill");
     masterPlay.classList.remove("bi-pause-fill");
+  } else {
+    music.pause();
     wave.classList.remove("active2");
+    masterPlay.classList.remove("bi-play-fill");
+    masterPlay.classList.add("bi-pause-fill");
   }
 });
 
 const makeAllBackground = () => {
   Array.from(document.getElementsByClassName("songItem")).forEach((el) => {
     el.style.background = "grey";
+  });
+};
+
+const makeAllplays = () => {
+  Array.from(document.getElementsByClassName("playListPlay")).forEach((el) => {
+    el.classList.add("bi-play-circle-fill");
+    el.classList.remove("bi-pause-circle-fill");
   });
 };
 
@@ -150,8 +157,8 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
     music.src = `audio/${index}.mp3`;
     poster_master_play.src = `img/${index}.jpg`;
     music.play();
-    masterPlay.classList.add("bi-play-fill");
-    masterPlay.classList.remove("bi-pause-fill");
+    masterPlay.classList.remove("bi-play-fill");
+    masterPlay.classList.add("bi-pause-fill");
 
     let songTitles = songs.filter((els) => {
       return els.id == index;
@@ -161,8 +168,18 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
       title.innerHTML = songName;
     });
     makeAllBackground();
+    Array.from(document.getElementsByClassName("songItem"))[
+      index - 1
+    ].style.background = "lightblue";
+    makeAllplays();
+    el.target.classList.remove("bi-play-circle-fill");
+    el.target.classList.add("bi-pause-circle-fill");
+    wave.classList.add("active2");
   });
 });
+
+let currentStart = document.getElementById("currentStart");
+let currentStart = document.getElementById("currentEnd");
 
 //
 
