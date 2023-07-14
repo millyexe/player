@@ -31,26 +31,27 @@ position: relative;
 width: 25%;
 height: 90%;
 /* border: 1px solid white; */
-background-color: darkblue ;
+background-color: #8ab6f9;
 box-shadow: 5px 0px 2px darkblue;
 color: white;
 }
 
 header .song_side{
 width: 75%;
-background: rgb(93, 93, 196);
+background: #cadcfc;
 }
 
 header .master_play{
 width: 100%;
 height: 10%;
-background: darkblue;
+background: #00246b;
 box-shadow: 0px 3px 8px rgb(5, 22, 22);
 }
 header .menu_side h1{
     font-size: 20px;
     margin: 15px 0px 0px 20px;
     font-weight: 500;
+    color: #00246b;
 
 }
 header .menu_side .playlist{
@@ -67,7 +68,7 @@ header .menu_side .playlist h4{
     transition: .3s linear;
 }
 header .menu_side .playlist h4:hover{
-    color: white;
+    color: #6f96d9;
 }
 
 header .menu_side .playlist h4 span{
@@ -95,7 +96,7 @@ header .menu_side .playlist h4 .bi{
 
 }
 header .menu_side .playlist .active{
-    color: aquamarine;
+    color: black;
 
 }
 header .menu_side .playlist .active span{
@@ -258,7 +259,7 @@ header .master_play .bar {
   position: relative;
   width: 43%;
   height: 2px;
-  background: grey;
+  background: rgb(133, 48, 48);
   margin: 0px 15px 0px 10px ;
 }
 header .master_play .bar .bar2 {
@@ -388,7 +389,7 @@ header .song_side nav ul li{
   position: relative;
   list-style-type: none;
   font-size: 13px;
-  color: aliceblue;
+  color: #00246b;
   margin-right: 25px;
   cursor: pointer;
   transition: .3 linear;
@@ -397,13 +398,13 @@ header .song_side nav ul li:hover{
   color: white;
 }
 header .song_side nav ul li:nth-child(1){
-  color: white;
+  color: #00246b;
 }
 header .song_side nav ul li span{
   position: absolute;
   width: 100%;
   height: 2.5px;
-  background: aqua;
+  background: black;
   bottom: -5px;
   left: 0 ;
   border-radius: 20px;
@@ -463,6 +464,7 @@ header .song_side .content {
 header .song_side .content h1{
   font-size: 25px;
   font-weight: 600;
+  color: #00246b;
 
 }
 header .song_side .content p{
