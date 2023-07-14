@@ -180,6 +180,9 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
 
 let currentStart = document.getElementById("currentStart");
 let currentEnd = document.getElementById("currentEnd");
+let seek = document.getElementById("seek");
+let bar2 = document.getElementById("bar2");
+let dot = document.getElementsByClassName("dot")[0];
 
 music.addEventListener("timeupdate", () => {
   let music_curr = music.currentTime;
@@ -188,45 +191,29 @@ music.addEventListener("timeupdate", () => {
   let min1 = Math.floor(music_dur / 60);
   let sec1 = Math.floor(music_dur % 60);
 
+  if (sec1 < 10) {
+    sec1 = `0${sec1}`;
+  }
   currentEnd.innerText = `${min1}:${sec1}`;
+
+  let min2 = Math.floor(music_curr / 60);
+  let sec2 = Math.floor(music_curr % 60);
+  if (sec2 < 10) {
+    sec2 = `0${sec2}`;
+  }
+
+  currentStart.innerText = `${min2}:${sec2}`;
+
+  let progressBar = parseInt((music_curr / music_dur) * 100);
+  seek.value = progressBar;
+
+  let seekbar = seek.value;
+  bar2.style.width = `${seekbar}$`;
+  dot.style.left = `${seekbar}$`;
 });
 
-//
+// space
 
-// const makeAllPlays = () => {
-//   Array.from(document.getElementsByClassName("playListPlay")).forEach(
-//     (element) => {
-//       element.classList.add("bi-play-circle-fill");
-//       element.classList.remove("bi-pause-circle-fill");
-//     }
-//   );
-// };
-
-// let index = 0;
-
-// let poster_master_play = document.getElementById("poster_master_play");
-// let title = document.getElementById("title");
-
-// Array.from(document.getElementsByClassName("playListPlay")).forEach(
-//   (element) => {
-//     element.addEventListener("click", (e) => {
-//       index = e.target.id;
-//       makeAllPlays();
-//       e.target.classList.remove("bi-play-circle-fill");
-//       e.target.classList.add("bi-pause-circle-fill");
-//       music.src = `audio/${index}.mp3`;
-//       poster_master_play.src = `img/${index}.jpg`;
-//       music.play();
-//       let song_title = songs.filter((ele) => {
-//         return ele.id == index;
-//       });
-//       song_title.forEach((ele) => {
-//         let { songName } = ele;
-//         title.innerHTML = songName;
-//       });
-//     });
-//   }
-// );
 let pop_song_left = document.getElementById("pop_song_left");
 let pop_song_right = document.getElementById("pop_song_right");
 let pop_song = document.getElementsByClassName("pop_song")[0];
