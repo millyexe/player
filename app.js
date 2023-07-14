@@ -179,7 +179,17 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
 });
 
 let currentStart = document.getElementById("currentStart");
-let currentStart = document.getElementById("currentEnd");
+let currentEnd = document.getElementById("currentEnd");
+
+music.addEventListener("timeupdate", () => {
+  let music_curr = music.currentTime;
+  let music_dur = music.duration;
+
+  let min1 = Math.floor(music_dur / 60);
+  let sec1 = Math.floor(music_dur % 60);
+
+  currentEnd.innerText = `${min1}:${sec1}`;
+});
 
 //
 
