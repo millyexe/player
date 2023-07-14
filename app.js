@@ -277,9 +277,9 @@ back.addEventListener("click", () => {
 });
 
 next.addEventListener("click", () => {
-  index -= 1;
-  if (index < 1) {
-    index = Array.from(document.getElementsByClassName("songItem")).length;
+  index++;
+  if (index > Array.from(document.getElementsByClassName("songItem")).length) {
+    index = 1;
   }
 
   music.src = `audio/${index}.mp3`;
@@ -305,6 +305,7 @@ next.addEventListener("click", () => {
   wave.classList.add("active2");
 });
 
+// feefefs
 let pop_song_left = document.getElementById("pop_song_left");
 let pop_song_right = document.getElementById("pop_song_right");
 let pop_song = document.getElementsByClassName("pop_song")[0];
