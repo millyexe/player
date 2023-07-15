@@ -43,73 +43,145 @@ const songs = [
     id: "7",
     songName: `Music7<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/7.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "8",
     songName: `Music8<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/8.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "9",
     songName: ` Music9 <br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/9.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "10",
     songName: `Music10<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/10.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "11",
     songName: `Music11<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/11.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "12",
     songName: `Music12<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/12.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "13",
     songName: `Music13<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/13.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "14",
     songName: `Music14<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/14.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "15",
     songName: `Music15<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/15.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "16",
     songName: `Music16<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/16.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "17",
     songName: `Music17<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/17.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
   },
   {
     id: "18",
     songName: `Music18<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/18.jpg",
+    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+  },
+  {
+    id: "19",
+    songName: `Music7<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "20",
+    songName: `Music8<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "21",
+    songName: ` Music9 <br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "22",
+    songName: `Music10<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "23",
+    songName: `Music11<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "24",
+    songName: `Music12<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "25",
+    songName: `Music13<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "26",
+    songName: `Music14<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "27",
+    songName: `Music15<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "28",
+    songName: `Music16<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "29",
+    songName: `Music17<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
+  },
+  {
+    id: "30",
+    songName: `Music18<br>
+    <div class="subtitle">MILLYexe</div>`,
+    poster: "nature/rain-photography-cover.jpg",
   },
 ];
 
@@ -316,14 +388,14 @@ pop_song_right.addEventListener("click", () => {
 pop_song_left.addEventListener("click", () => {
   pop_song.scrollLeft -= 330;
 });
-let pop_art_left = document.getElementById("pop_art_left");
-let pop_art_right = document.getElementById("pop_art_right");
-let Artists_bx = document.getElementsByClassName("Artists_bx")[0];
+// let pop_art_left = document.getElementById("pop_art_left");
+// let pop_art_right = document.getElementById("pop_art_right");
+// let Artists_bx = document.getElementsByClassName("Artists_bx")[0];
 
-pop_art_right.addEventListener("click", () => {
-  Artists_bx.scrollLeft += 330;
-});
+// pop_art_right.addEventListener("click", () => {
+//   Artists_bx.scrollLeft += 330;
+// });
 
-pop_art_left.addEventListener("click", () => {
-  Artists_bx.scrollLeft -= 330;
-});
+// pop_art_left.addEventListener("click", () => {
+//   Artists_bx.scrollLeft -= 330;
+// });
