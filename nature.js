@@ -43,145 +43,145 @@ const songs = [
     id: "7",
     songName: `Music7<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "8",
     songName: `Music8<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "9",
     songName: ` Music9 <br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "10",
     songName: `Music10<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "11",
     songName: `Music11<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "12",
     songName: `Music12<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "13",
     songName: `Music13<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "14",
     songName: `Music14<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "15",
     songName: `Music15<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "16",
     songName: `Music16<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "17",
     songName: `Music17<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "18",
     songName: `Music18<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "/nature/istockphoto-1300107681-612x612.jpg",
+    poster: "img/19.jpg",
   },
   {
     id: "19",
-    songName: `Music7<br>
+    songName: `Music19<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "20",
-    songName: `Music8<br>
+    songName: `Music20<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "21",
-    songName: ` Music9 <br>
+    songName: ` Music21 <br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "22",
-    songName: `Music10<br>
+    songName: `Music22<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "23",
-    songName: `Music11<br>
+    songName: `Music23<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "24",
-    songName: `Music12<br>
+    songName: `Music24<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "25",
-    songName: `Music13<br>
+    songName: `Music25<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "26",
-    songName: `Music14<br>
+    songName: `Music26<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "27",
-    songName: `Music15<br>
+    songName: `Music27<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "28",
-    songName: `Music16<br>
+    songName: `Music28<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "29",
-    songName: `Music17<br>
+    songName: `Music29<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
   {
     id: "30",
-    songName: `Music18<br>
+    songName: `Music30<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "nature/rain-photography-cover.jpg",
+    poster: "img/20.jpg",
   },
 ];
 
