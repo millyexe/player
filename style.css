@@ -448,6 +448,7 @@ header .song_side nav .search .search_results .card{
   background: rgba(101, 124, 185, 0.1);
   margin-bottom: 5px;
   text-decoration: none;
+  display: none ;
 }
 header .song_side nav .search .search_results .card img{
 width: 35px;

@@ -24,3 +24,5 @@ fix dot. why its stuck?
 create unique profile of each albume
 
 add EVERY SINGLE SONG INTO SEARCH BAR
+
+edit playlast js for search \
