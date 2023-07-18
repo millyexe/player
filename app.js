@@ -117,6 +117,22 @@ Array.from(document.getElementsByClassName("songItem")).forEach((e, i) => {
   e.getElementsByTagName("img")[0].src = songs[i].poster;
   e.getElementsByTagName("h5")[0].innerHTML = songs[i].songName;
 });
+
+let search_results = document.getElementsByClassName("search_results")[0];
+songs.forEach((element) => {
+  const { id, songName, poster } = element;
+  let card = document.createElement("card");
+  card.classList.add("card");
+
+  card.innerHTML = ` 
+  <img src="${poster}" alt="">
+  <div class="content">
+${songName}
+  </div>
+`;
+  search_results.appendChild(card);
+});
+
 let masterPlay = document.getElementById("masterPlay");
 let wave = document.getElementById("wave");
 

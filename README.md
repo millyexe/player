@@ -23,4 +23,4 @@ fix dot. why its stuck?
 
 create unique profile of each albume
 
-add EVERY FUCKING SINGLE SONG INTO SEARCH BAR FUCKING HELL
+add EVERY SINGLE SONG INTO SEARCH BAR
