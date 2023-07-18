@@ -427,6 +427,47 @@ header .song_side nav .search::before{
   backdrop-filter: blur(5px);
   z-index: -1;
 }
+header .song_side nav .search .search_results{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid white; */
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: auto;
+}
+header .song_side nav .search .search_results::-webkit-scrollbar{
+  display: none;
+}
+header .song_side nav .search .search_results .card{
+  width: 100%;
+  min-height: 45px;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  background: rgba(101, 124, 185, 0.1);
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+header .song_side nav .search .search_results .card img{
+width: 35px;
+height: 35px;
+border-radius: 5px;
+}
+header .song_side nav .search .search_results .card .content{
+  width: 80%;
+  height: 100%;
+  /* border: 1px solid white; */
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  }
+  header .song_side nav .search .search_results .card .content .subtitle{
+    font-size: 11px;
+    color: grey;
+    font-weight: 500;
+    }
 header .song_side nav .search .bi{
   font-size: 13px;
   padding: 3px 0px 0px 10px;
@@ -646,7 +687,3 @@ header .song_side .popular_song .pop_song li h5{
         /* position: absolute; */
         }
 
-.h9{
-  font-size: 40px;
-  color: black;
-}
