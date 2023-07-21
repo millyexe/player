@@ -26,3 +26,6 @@ create unique profile of each albume
 add EVERY SINGLE SONG INTO SEARCH BAR
 
 edit playlast js for search \
+
+how to make a playlist????????????
+does it need to be connected to database?
