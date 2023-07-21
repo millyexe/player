@@ -29,3 +29,5 @@ edit playlast js for search \
 
 how to make a playlist????????????
 does it need to be connected to database?
+
+remove alb on the left, i dont need them

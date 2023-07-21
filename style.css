@@ -693,3 +693,27 @@ header .song_side .popular_song .pop_song li h5{
         /* position: absolute; */
         }
 
+/* login style */
+header .left_bx1, .right_bx1 {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  /* border: 1px solid white; */
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .left_bx1 {
+  width: 35%;
+  background: white;
+  box-shadow: 5px 0px 2px darkblue ;
+}
+header .left_bx1 .content {
+  width: 75%;
+  height: auto;
+  border: 1px solid black;
+  padding: 25px 20px;
+  background: white;
+}
