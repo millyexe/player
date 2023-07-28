@@ -708,12 +708,14 @@ header .left_bx1, .right_bx1 {
 header .left_bx1 {
   width: 35%;
   background: white;
-  box-shadow: 5px 0px 2px darkblue ;
+  /* box-shadow: 5px 0px 2px darkblue ; */
 }
+
+
 header .left_bx1 .content {
   width: 75%;
   height: auto;
-  border: 1px solid black;
+  border: none;
   padding: 25px 20px;
   background: white;
 }
@@ -753,4 +755,37 @@ header .left_bx1 .content .submit {
   background: black;
   width: 100%;
   cursor: pointer;
+ }
+
+ header .left_bx1 .content .check {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+ }
+
+ header .left_bx1 .content .check span {
+  margin-left: 5px ;
+  font-size: 13px;
+ }
+ header .left_bx1 .content p {
+  margin-top: 90px ;
+  text-align: center;
+  font-size: 13px;
+ }
+
+ header .left_bx1 .content p a{
+ text-decoration: none;
+  font-weight: bold;
+  color: #8ab6f9;
+ }
+
+ header .right_bx1 h3{
+  position: absolute;
+  background: #8ab6f9;
+  color: black;
+  right: 0;
+  bottom: 20px;
+  padding: 3px 10px;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 15px;
  }
