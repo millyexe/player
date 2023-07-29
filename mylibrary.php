@@ -90,7 +90,7 @@
           <ul>
             <li>Discover<span></span></li>
             <li>My Library</li>
-            <li><a href="radio.php">Vintage Radio</li></a>
+            <li>Vintage Radio</li>
           </ul>
           <div class="search">
             <i class="bi bi-search"></i>
