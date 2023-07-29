@@ -1,3 +1,29 @@
+<?php
+session_start();
+
+include("db_connect.php");
+$msg = false;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $user_name = $_POST["user_name"];
+  $user_email = $_POST["user_email"];
+  $user_password = $_POST["user_password"];
+  $user_re_password = $_POST["user_re_password"];
+ 
+
+if (!empty($user_name) && !empty($user_email) && !empty($user_password) && !is_numeric($user_name)){
+ if ($user_password === $user_re_password) {
+ $query = "insert into user (name, email, password) VALUES ("$user_name", "$user_email", "$user_password", "$user_re_password")";
+ mysqli_query($con, $query);
+ header("Location: login.php");
+} else {
+$msg = "Password Not Match";
+ }
+  
+ }
+} 
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,7 +88,10 @@
       </div>
       <div class="right_bx1">
         <img src="img/loginp.jpg" alt="" />
-        <h3>Inccorect Password</h3>
+        // <h3>Incorect Password</h3>
+        <?php 
+        echo ('<h3>'.$msg."</h3>");
+        ?>
       </div>
     </header>
   </body>
