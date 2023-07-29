@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if (!empty($user_name) && !empty($user_email) && !empty($user_password) && !is_numeric($user_name)){
  if ($user_password === $user_re_password) {
-  $query = "INSERT INTO user (name, email, password) VALUES ('" . $user_name . "', '" . $user_email . "', '" . $user_password . "')";
+  $query = "INSERT INTO user (user, email, password) VALUES ('" . $user_name . "', '" . $user_email . "', '" . $user_password . "')";
 
  mysqli_query($con, $query);
  header("Location: login.php");

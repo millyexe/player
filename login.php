@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+include("db_connect.php");
+$msg = false;
+
+if (isset($_POST["user_name"])) {
+    $user_name = $_POST["user_name"];
+    $user_password = $_POST["user_password"];
+    $query = "SELECT * FROM user WHERE user = '".$user_name."' AND password = '".$user_password."' LIMIT 1";
+    $result = mysqli_query($con, $query);
+
+    if (mysqli_num_rows($result) == 1) {
+        header("Location: welcome.php");
+        exit; // Terminate the script after the redirect
+    } else {
+        $msg = "Incorrect Password";
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,7 +67,10 @@
       </div>
       <div class="right_bx1">
         <img src="img/loginp.jpg" alt="" />
-        <h3>Inccorect Password</h3>
+        <!-- <h3>Incorrect Password</h3> -->
+        <?php 
+        echo ('<h3>'.$msg."</h3>");
+        ?>
       </div>
     </header>
   </body>
