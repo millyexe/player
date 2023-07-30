@@ -516,9 +516,9 @@ header .song_side .content h1{
 
 }
 header .song_side .content p{
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 400;
-  color: grey;
+  color: black;
   margin: 5px;
 }
 header .song_side .content .buttons{
@@ -598,7 +598,7 @@ header .song_side .popular_song .pop_song li{
   }
 
   header .song_side .popular_song .pop_song li:hover{ 
-   background: grey;
+   background: rgb(137, 127, 91);
  }
   
   header .song_side .popular_song .pop_song li .img_play{ 

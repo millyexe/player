@@ -208,7 +208,7 @@ masterPlay.addEventListener("click", () => {
 
 const makeAllBackground = () => {
   Array.from(document.getElementsByClassName("songItem")).forEach((el) => {
-    el.style.background = "grey";
+    el.style.background = "rgb(128, 147, 120)";
   });
 };
 

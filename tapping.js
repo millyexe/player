@@ -43,145 +43,73 @@ const songs = [
     id: "7",
     songName: `Music7<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/7.jpg",
   },
   {
     id: "8",
     songName: `Music8<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/8.jpg",
   },
   {
     id: "9",
     songName: ` Music9 <br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/9.jpg",
   },
   {
     id: "10",
     songName: `Music10<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/10.jpg",
   },
   {
     id: "11",
     songName: `Music11<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/11.jpg",
   },
   {
     id: "12",
     songName: `Music12<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/12.jpg",
   },
   {
     id: "13",
     songName: `Music13<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/13.jpg",
   },
   {
     id: "14",
     songName: `Music14<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/14.jpg",
   },
   {
     id: "15",
     songName: `Music15<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/15.jpg",
   },
   {
     id: "16",
     songName: `Music16<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/16.jpg",
   },
   {
     id: "17",
     songName: `Music17<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
+    poster: "img/17.jpg",
   },
   {
     id: "18",
     songName: `Music18<br>
     <div class="subtitle">MILLYexe</div>`,
-    poster: "img/19.jpg",
-  },
-  {
-    id: "19",
-    songName: `Music19<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "20",
-    songName: `Music20<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "21",
-    songName: ` Music21 <br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "22",
-    songName: `Music22<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "23",
-    songName: `Music23<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "24",
-    songName: `Music24<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "25",
-    songName: `Music25<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "26",
-    songName: `Music26<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "27",
-    songName: `Music27<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "28",
-    songName: `Music28<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "29",
-    songName: `Music29<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
-  },
-  {
-    id: "30",
-    songName: `Music30<br>
-    <div class="subtitle">MILLYexe</div>`,
-    poster: "img/20.jpg",
+    poster: "img/18.jpg",
   },
 ];
 
@@ -189,6 +117,45 @@ Array.from(document.getElementsByClassName("songItem")).forEach((e, i) => {
   e.getElementsByTagName("img")[0].src = songs[i].poster;
   e.getElementsByTagName("h5")[0].innerHTML = songs[i].songName;
 });
+
+let search_results = document.getElementsByClassName("search_results")[0];
+songs.forEach((element) => {
+  const { id, songName, poster } = element;
+  let card = document.createElement("a");
+  card.classList.add("card");
+  card.href = "#" + id;
+  card.innerHTML = ` 
+  <img src="${poster}" alt="">
+  <div class="content">
+${songName}
+  </div>
+`;
+  search_results.appendChild(card);
+});
+
+let input = document.getElementsByTagName("input")[0];
+
+input.addEventListener("keyup", () => {
+  let input_value = input.value.toUpperCase();
+  let items = search_results.getElementsByTagName("a");
+
+  for (let index = 0; index < items.length; index++) {
+    let as = items[index].getElementsByClassName("content")[0];
+    let text_value = as.textContent || as.innerHTML;
+
+    if (text_value.toUpperCase().indexOf(input_value) > -1) {
+      items[index].style.display = "flex";
+    } else {
+      items[index].style.display = "none";
+    }
+    if (input.value == 0) {
+      search_results.style.display = "none";
+    } else {
+      search_results.style.display = "";
+    }
+  }
+});
+
 let masterPlay = document.getElementById("masterPlay");
 let wave = document.getElementById("wave");
 
@@ -208,7 +175,7 @@ masterPlay.addEventListener("click", () => {
 
 const makeAllBackground = () => {
   Array.from(document.getElementsByClassName("songItem")).forEach((el) => {
-    el.style.background = "grey";
+    el.style.background = "rgb(128, 147, 120)";
   });
 };
 
@@ -242,7 +209,7 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
     makeAllBackground();
     Array.from(document.getElementsByClassName("songItem"))[
       index - 1
-    ].style.background = "lightblue";
+    ].style.background = "rgb(137, 127, 91)";
     makeAllplays();
     el.target.classList.remove("bi-play-circle-fill");
     el.target.classList.add("bi-pause-circle-fill");
@@ -341,7 +308,7 @@ back.addEventListener("click", () => {
   makeAllBackground();
   Array.from(document.getElementsByClassName("songItem"))[
     index - 1
-  ].style.background = "lightblue";
+  ].style.background = "rgb(128, 147, 120)";
   makeAllplays();
   el.target.classList.remove("bi-play-circle-fill");
   el.target.classList.add("bi-pause-circle-fill");
@@ -370,7 +337,7 @@ next.addEventListener("click", () => {
   makeAllBackground();
   Array.from(document.getElementsByClassName("songItem"))[
     index - 1
-  ].style.background = "lightblue";
+  ].style.background = "rgb(128, 147, 120)";
   makeAllplays();
   el.target.classList.remove("bi-play-circle-fill");
   el.target.classList.add("bi-pause-circle-fill");
@@ -388,14 +355,62 @@ pop_song_right.addEventListener("click", () => {
 pop_song_left.addEventListener("click", () => {
   pop_song.scrollLeft -= 330;
 });
-// let pop_art_left = document.getElementById("pop_art_left");
-// let pop_art_right = document.getElementById("pop_art_right");
-// let Artists_bx = document.getElementsByClassName("Artists_bx")[0];
+let pop_art_left = document.getElementById("pop_art_left");
+let pop_art_right = document.getElementById("pop_art_right");
+let Artists_bx = document.getElementsByClassName("Artists_bx")[0];
 
-// pop_art_right.addEventListener("click", () => {
-//   Artists_bx.scrollLeft += 330;
-// });
+pop_art_right.addEventListener("click", () => {
+  Artists_bx.scrollLeft += 330;
+});
 
-// pop_art_left.addEventListener("click", () => {
-//   Artists_bx.scrollLeft -= 330;
-// });
+pop_art_left.addEventListener("click", () => {
+  Artists_bx.scrollLeft -= 330;
+});
+
+var phrases = [
+  "Believe in yourself and all that you are.",
+  "You are capable of amazing things.",
+  "The only limit is your imagination.",
+  "Believe in the power of your dreams and watch them come true.",
+  "You have the strength within you to overcome any challenge.",
+  "Embrace the journey, for it is where you will find your true purpose.",
+  "Every day is a new opportunity to create the life you envision.",
+  "Your perseverance and determination will lead you to great success.",
+  "Let your passion guide you on the path to fulfillment and happiness.",
+  "You possess the ability to make a positive impact on the world around you.",
+  "Challenges are stepping stones to growth and self-discovery.",
+  "Your unique talents and abilities have the power to inspire others.",
+  "In the face of adversity, remember that you are stronger than you think.",
+  "You deserve boundless happiness that knows no limits.",
+  "Embrace the joy that you truly deserve with open arms.",
+  "Believe in your worthiness of unwavering happiness and let it fill your life.",
+  "You are deserving of radiant happiness that shines from within.",
+  "Celebrate the fact that you deserve an abundance of happiness and fulfillment.",
+  "Embrace the happiness that is rightfully yours and let it guide your journey.",
+  "Remember that you are deserving of happiness in every aspect of your life.",
+  "You are worthy of happiness that transcends all boundaries and limitations.",
+  "As you recognize your own worth, you unlock the door to lasting happiness.",
+  "You are loved.",
+  "Embrace the love within yourself and watch it radiate into the world around you.",
+  "You are deserving of your own love and care, just as much as anyone else.",
+  "Celebrate the unique and beautiful individual that you are, and love yourself unconditionally.",
+  "Cherish your own heart and soul, for you are worthy of your own love and affection.",
+  "In the journey of self-discovery, learn to love every part of yourself, both light and dark.",
+  "Your love for yourself is a powerful force that can heal, transform, and inspire.",
+  "Nurture a deep and genuine love for yourself, and let it be the foundation of your happiness.",
+  "Treasure the person you are becoming and shower yourself with love every step of the way.",
+  "Your self-love is a beacon of light that attracts positivity, growth, and genuine connections.",
+  "Embrace self-love as an act of courage, and watch it ignite a beautiful transformation within you.",
+  "You deserve to be happy.",
+  // Add more phrases
+];
+
+function getRandomPhrase() {
+  var randomIndex = Math.floor(Math.random() * phrases.length);
+  return phrases[randomIndex];
+}
+
+window.onload = function () {
+  var phraseElement = document.querySelector(".inspirationalPhrase");
+  phraseElement.innerHTML = getRandomPhrase();
+};
