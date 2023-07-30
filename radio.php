@@ -399,7 +399,64 @@
             </li>
           </div>
         </div>
-       
+        <!-- <div class="popular_artists">
+          <div class="h4">
+            <h4>Popular Triggers</h4>
+            <div class="btn_s">
+              <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+              <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+            </div>
+          </div>
+          <div class="item Artists_bx">
+            <li>
+              <img src="imgt/bird.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/book.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/city.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/whisper.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/rain.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/hair.jpg" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/nature.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/books.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="imgt/nails.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="img/img.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="img/img.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="img/img.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="img/img.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="img/img.jpg" alt="" title="MILLYexe" />
+            </li>
+            <li>
+              <img src="img/img.jpg" alt="" title="MILLYexe" />
+            </li>
+             change all img and names 
+         </div> -->
+      </div>
+      </div> 
 
       <div class="master_play">
         <div class="wave" id="wave">

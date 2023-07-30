@@ -31,14 +31,14 @@ position: relative;
 width: 25%;
 height: 90%;
 /* border: 1px solid white; */
-background-color: #8ab6f9;
+background-color: #618156;
 box-shadow: 5px 0px 2px rgb(31, 92, 233);
 color: white;
 }
 
 header .song_side{
 width: 75%;
-background: #cadcfc;
+background: #3c4d30;
 }
 
 .inspirationalPhrase {
@@ -49,7 +49,7 @@ color: black;
 header .master_play{
 width: 100%;
 height: 10%;
-background: rgb(31, 92, 233);
+background: rgb(32, 46, 13);
 box-shadow: 0px 3px 8px #092219;
 }
 header .menu_side h1{
@@ -73,7 +73,7 @@ header .menu_side .playlist h4{
     transition: .3s linear;
 }
 header .menu_side .playlist h4:hover{
-    color: #6f96d9;
+    color: white;
 }
 
 header .menu_side .playlist h4 span{
@@ -86,7 +86,7 @@ header .menu_side .playlist h4 span::before{
     position: absolute;
     width: 4px;
     height: 4px;
-    border: 2px solid grey;
+    border: 2px solid rgb(131, 150, 129);
     border-radius: 50%;
     top: -4px;
     transition: .3s linear;
@@ -128,11 +128,11 @@ header .menu_side .menu_song li{
     margin-bottom: 10px;
     cursor: pointer;
     transition: .3s linear;
-    background: grey;
+    background: rgb(128, 147, 120);
 
 }
 header .menu_side .menu_song li:hover{
-  background: rgb(23, 52, 18);
+  background: rgb(137, 127, 91);
 
 }
 header .menu_side .menu_song span{
@@ -153,7 +153,7 @@ header .menu_side .menu_song li h5{
 }
 header .menu_side .menu_song li h5 .subtitle{
     font-size: 9px;
-    color: grey;
+    color: rgb(7, 21, 7);
 }
 header .menu_side .menu_song li h5 .bi{
   position: absolute;
@@ -286,13 +286,14 @@ header .master_play .bar .dot {
   left: 0%;
   top: -1px;
   transition: 1s linear;
+  
 }
 header .master_play .bar .dot::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  background: lightblue;
+  width: 0;
+  height: 0;
+  background: rgba(173, 216, 230, 0);
   border-radius: 50%;
   left: -6px;
   top: -6px;
@@ -346,9 +347,9 @@ header .master_play .vol .vol_bar {
 
 header .master_play .vol .dot {
   position: absolute;
-  width: 5px;
-  height: 5px;
-  background: lightblue;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0);
   border-radius: 50%;
   left: 100%;
   top: -1px;
@@ -357,8 +358,8 @@ header .master_play .vol .dot {
 header .master_play .vol .dot::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 0;
+  height: 0;
   background: lightblue;
   border-radius: 50%;
   left: -6px;
@@ -788,4 +789,18 @@ header .left_bx1 .content .submit {
   padding: 3px 10px;
   border-radius: 5px 0px 0px 5px;
   font-size: 15px;
+ }
+
+ header .playergif {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 40px;
+  align-content: center;
+ }
+
+  header .playergif img{
+    height: 350px;
+    width: 800px;
+    
  }
