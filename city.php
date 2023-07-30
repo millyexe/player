@@ -88,9 +88,9 @@
       <div class="song_side">
         <nav>
           <ul>
-            <li><a href="index.html">Discover</li></a>
+            <li><a href="welcome.php">Discover</li></a>
             <li>My Library</li>
-            <li>Vintage Radio</li>
+            <li><a href="radio.php">Discover</li></a>
           </ul>
           <div class="search">
             <i class="bi bi-search"></i>

@@ -82,39 +82,84 @@
             </h5>
             <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
           </li>
+          <li class="songItem">
+            <span>06</span>
+            <img src="img/6.jpg" alt="" />
+            <h5>
+              Possitive Afformation
+              <div class="subtitle">MILLYexe</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+          </li>
+          <li class="songItem">
+            <span>06</span>
+            <img src="img/6.jpg" alt="" />
+            <h5>
+              Possitive Afformation
+              <div class="subtitle">MILLYexe</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+          </li>
         </div>
       </div>
 
       <div class="song_side">
         <nav>
           <ul>
-            <li><a href="welcome.php">Discover</li></a>
+          <li><a href="welcome.php">Discover</li></a>
             <li>My Library</li>
-            <li><a href="radio.php">Vintage Radio</li></a>
+            <li>Vintage Radio<span></span></li>
           </ul>
           <div class="search">
             <i class="bi bi-search"></i>
             <input type="text" placeholder="Search ASMR" />
+             <div class="search_results">
+                <!--<a href="" class="card">
+              <img src="img/1.jpg" alt="">
+           <div class="content">Meditation for sleep <div class="subtitle">MILLYexe</div> </div>
+          </a> 
+          <a href="" class="card">
+              <img src="img/2.jpg" alt="">
+           <div class="content">Singing <div class="subtitle">MILLYexe</div></div>
+          </a> 
+          <a href="" class="card">
+              <img src="img/3.jpg" alt="">
+           <div class="content">Tapping on wood <div class="subtitle">MILLYexe</div></div> 
+          </a>   
+          <a href="" class="card">
+              <img src="img/4.jpg" alt="">
+           <div class="content">Heavy Rain <div class="subtitle">Nature ASMR</div></div> 
+          </a>  <a href="" class="card">
+              <img src="img/5.jpg" alt="">
+           <div class="content">Ocean <div class="subtitle">Nature ASMR</div></div> 
+          </a>   <a href="" class="card">
+              <img src="img/6.jpg" alt="">
+           <div class="content">Possitive Afformation <div class="subtitle">MILLYexe</div></div> 
+          </a>   -->
+        </div>
           </div>
           <div class="user">
             <img src="img/javk.jpg" alt="User" title="KDS COVER (Millyexe)" />
           </div>
         </nav>
         <div class="content">
-          <h1>Vintage Radio</h1>
+          <h1>HELLO (name)!</h1>
+          <div class="inspirationalPhrase"></div>
           <p>
-            Enjoy our collection of calming audio for working, studying and just relaxing.
+            Get comfortable, drink some tea, and let all the stress and pain
+            leave your head.
             <br />
-            Everything is gonna be alright.
+            Please relax with some ASMR
           </p>
-          <div class="buttons">
+          <!-- <div class="buttons">
             <button>PLAY</button>
             <button>FOLLOW</button>
-          </div>
+          </div> -->
+         
         </div>
-        <div class="popular_song">
+        <!-- <div class="popular_song">
           <div class="h4">
-            <h4>Liquid sounds</h4>
+            <h4>Popular ASMR</h4>
             <div class="btn_s">
               <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
               <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
@@ -123,7 +168,7 @@
           <div class="pop_song">
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/7.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
               </div>
               <h5>
@@ -134,7 +179,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/8.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
               </div>
               <h5>
@@ -145,7 +190,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/9.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
               </div>
               <h5>
@@ -156,7 +201,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/10.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
               </div>
               <h5>
@@ -167,7 +212,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/11.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
               </div>
               <h5>
@@ -178,7 +223,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/12.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
               </div>
               <h5>
@@ -189,7 +234,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/13.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
               </div>
               <h5>
@@ -200,7 +245,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/14.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
               </div>
               <h5>
@@ -211,7 +256,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/15.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
               </div>
               <h5>
@@ -222,7 +267,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/16.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
               </div>
               <h5>
@@ -233,7 +278,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/17.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
               </div>
               <h5>
@@ -244,7 +289,7 @@
             </li>
             <li class="songItem">
               <div class="img_play">
-                <img src="img/19.jpg" alt="" />
+                <img src="img/18.jpg" alt="" />
                 <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
               </div>
               <h5>
@@ -255,151 +300,7 @@
             </li>
           </div>
         </div>
-
-        <div class="popular_song">
-          <div class="h4">
-            <h4>Hair</h4>
-            <div class="btn_s">
-              <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
-              <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
-            </div>
-          </div>
-          <div class="pop_song">
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
-              </div>
-              <h5>
-                Music19
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
-              </div>
-              <h5>
-                Music20
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
-              </div>
-              <h5>
-                Music21
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
-              </div>
-              <h5>
-                Music22
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
-              </div>
-              <h5>
-                Music23
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="24"></i>
-              </div>
-              <h5>
-                Music24
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="25"></i>
-              </div>
-              <h5>
-                Music25
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="26"></i>
-              </div>
-              <h5>
-                Music26
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="27"></i>
-              </div>
-              <h5>
-                Music27
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
-              </div>
-              <h5>
-                Music28
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="29"></i>
-              </div>
-              <h5>
-                Music29
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-            <li class="songItem">
-              <div class="img_play">
-                <img src="img/20.jpg" alt="" />
-                <i class="bi playListPlay bi-play-circle-fill" id="30"></i>
-              </div>
-              <h5>
-                Music30
-                <br />
-                <div class="subtitle">MILLYexe</div>
-              </h5>
-            </li>
-          </div>
-        </div>
-        <!-- <div class="popular_artists">
+        <div class="popular_artists">
           <div class="h4">
             <h4>Popular Triggers</h4>
             <div class="btn_s">
@@ -409,32 +310,41 @@
           </div>
           <div class="item Artists_bx">
             <li>
+              <a href="animals.html">
               <img src="imgt/bird.jpg" alt="" title="MILLYexe" />
-            </li>
+              </li></a>
             <li>
-              <img src="imgt/book.jpg" alt="" title="MILLYexe" />
-            </li>
+              <a href="reading.html">
+              <img src="imgt/book.jpg" alt="" title="MILLYexe"/>
+            </li></a>
             <li>
+              <a href="city.html">
               <img src="imgt/city.jpg" alt="" title="MILLYexe" />
-            </li>
+            </li></a>
             <li>
+              <a href="whisper.html">
               <img src="imgt/whisper.jpg" alt="" title="MILLYexe" />
-            </li>
+            </li></a>
             <li>
               <img src="imgt/rain.jpg" alt="" title="MILLYexe" />
             </li>
             <li>
+              <a href="spa.html">
               <img src="imgt/hair.jpg" title="MILLYexe" />
+            </li></a>
+            <li>
+              <a href="nature.html">
+                <img src="imgt/nature.jpg" alt="" title="Nature"
+              /></a>
             </li>
             <li>
-              <img src="imgt/nature.jpg" alt="" title="MILLYexe" />
-            </li>
-            <li>
+              <a href="afformation.html">
               <img src="imgt/books.jpg" alt="" title="MILLYexe" />
-            </li>
+            </li></a>
             <li>
+              <a href="tapping.html">
               <img src="imgt/nails.jpg" alt="" title="MILLYexe" />
-            </li>
+            </li></a>
             <li>
               <img src="img/img.jpg" alt="" title="MILLYexe" />
             </li>
@@ -454,10 +364,15 @@
               <img src="img/img.jpg" alt="" title="MILLYexe" />
             </li>
              change all img and names 
-         </div> -->
-      </div>
+          </div>
+        </div> -->
+        
+        <div class ="playergif">
+        <img src="/img/radio.gif" alt="Your GIF Image">
+    </div>
       </div> 
-
+    
+      
       <div class="master_play">
         <div class="wave" id="wave">
           <div class="wave1"></div>
@@ -490,6 +405,6 @@
         </div>
       </div>
     </header>
-    <script src="spa.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

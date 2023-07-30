@@ -290,39 +290,39 @@
           </div>
           <div class="item Artists_bx">
             <li>
-              <a href="animals.html">
+              <a href="animals.php">
               <img src="imgt/bird.jpg" alt="" title="MILLYexe" />
               </li></a>
             <li>
-              <a href="reading.html">
+              <a href="reading.php">
               <img src="imgt/book.jpg" alt="" title="MILLYexe"/>
             </li></a>
             <li>
-              <a href="city.html">
+              <a href="city.php">
               <img src="imgt/city.jpg" alt="" title="MILLYexe" />
             </li></a>
             <li>
-              <a href="whisper.html">
+              <a href="whisper.php">
               <img src="imgt/whisper.jpg" alt="" title="MILLYexe" />
             </li></a>
             <li>
               <img src="imgt/rain.jpg" alt="" title="MILLYexe" />
             </li>
             <li>
-              <a href="spa.html">
+              <a href="spa.php">
               <img src="imgt/hair.jpg" title="MILLYexe" />
             </li></a>
             <li>
-              <a href="nature.html">
+              <a href="nature.php">
                 <img src="imgt/nature.jpg" alt="" title="Nature"
               /></a>
             </li>
             <li>
-              <a href="afformation.html">
+              <a href="afformation.php">
               <img src="imgt/books.jpg" alt="" title="MILLYexe" />
             </li></a>
             <li>
-              <a href="tapping.html">
+              <a href="tapping.php">
               <img src="imgt/nails.jpg" alt="" title="MILLYexe" />
             </li></a>
             <li>
