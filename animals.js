@@ -242,7 +242,7 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
     makeAllBackground();
     Array.from(document.getElementsByClassName("songItem"))[
       index - 1
-    ].style.background = "lightblue";
+    ].style.background = "rgb(137, 127, 91)";
     makeAllplays();
     el.target.classList.remove("bi-play-circle-fill");
     el.target.classList.add("bi-pause-circle-fill");
@@ -341,7 +341,7 @@ back.addEventListener("click", () => {
   makeAllBackground();
   Array.from(document.getElementsByClassName("songItem"))[
     index - 1
-  ].style.background = "lightblue";
+  ].style.background = "rgb(137, 127, 91)";
   makeAllplays();
   el.target.classList.remove("bi-play-circle-fill");
   el.target.classList.add("bi-pause-circle-fill");
@@ -370,7 +370,7 @@ next.addEventListener("click", () => {
   makeAllBackground();
   Array.from(document.getElementsByClassName("songItem"))[
     index - 1
-  ].style.background = "lightblue";
+  ].style.background = "rgb(137, 127, 91)";
   makeAllplays();
   el.target.classList.remove("bi-play-circle-fill");
   el.target.classList.add("bi-pause-circle-fill");
