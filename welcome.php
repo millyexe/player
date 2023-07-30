@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -124,7 +126,8 @@
           </div>
         </nav>
         <div class="content">
-          <h1>HELLO (name)!</h1>
+        <h1>HELLO </h1>
+
           <div class="inspirationalPhrase"></div>
           <p>
             Get comfortable, drink some tea, and let all the stress and pain

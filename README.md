@@ -47,3 +47,6 @@ HOW CAN I CREATE UNIQUE PLAYLIST
 
 How to schafle recomentations? they suppose to be chosen by last listening?
 how to do all this shit???
+
+i need to seperated php, there is no way to use one page
+i can have progile page with all the info: home, about, app, login and sign up
