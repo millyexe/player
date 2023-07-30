@@ -33,5 +33,17 @@ does it need to be connected to database?
 remove alb on the left, i dont need them
 
 create login picture, icons , profile pics
+
 # player-php
+
 # player-php
+
+what is name already excist
+does it work having reg on web page? or its should be only on app?
+
+creating unique css for each php?
+
+HOW CAN I CREATE UNIQUE PLAYLIST
+
+How to schafle recomentations? they suppose to be chosen by last listening?
+how to do all this shit???
